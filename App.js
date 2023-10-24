@@ -38,8 +38,7 @@ export default function App() {
 
   function handleStartStop() {
     playSound();
-    setIsActive(!isActive);
-    
+    setIsActive(!isActive);    
   }
 
   async function playSound() {
@@ -59,7 +58,8 @@ export default function App() {
       <Header 
         currentTime={currentTime} 
         setCurrentTime={setCurrentTime} 
-        setTime={setTime}/>
+        setTime={setTime}
+      />
         <Timer time={time}/>
       <StatusBar style="auto" />
       <TouchableOpacity style={styles.button} onPress={handleStartStop}>
